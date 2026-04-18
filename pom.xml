@@ -20,6 +20,7 @@
         <appium.version>9.3.0</appium.version>
         <maven.surefire.version>3.5.2</maven.surefire.version>
         <maven.failsafe.version>3.5.2</maven.failsafe.version>
+        <selenium.version>4.33.0</selenium.version>
     </properties>
 
     <dependencyManagement>
@@ -31,7 +32,15 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
+            <dependency>
+                <groupId>org.seleniumhq.selenium</groupId>
+                <artifactId>selenium-bom</artifactId>
+                <version>${selenium.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
         </dependencies>
+
     </dependencyManagement>
 
     <dependencies>
