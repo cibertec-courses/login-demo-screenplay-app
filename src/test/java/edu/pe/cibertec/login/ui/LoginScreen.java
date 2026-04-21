@@ -7,14 +7,14 @@ import org.openqa.selenium.By;
 public class LoginScreen {
     public static  final Target CAMPO_USUARIO = Target
             .the("campo usuario")
-            .located(By.xpath("//android.widget.TextView[@text=\"Usuario\"]"));
+            .located(By.xpath("//android.widget.EditText[1]"));
 
     public static final Target CAMPO_PASSWORD = Target
             .the("campo password")
-            .located(By.xpath("//android.widget.TextView[@text=\"Password\"]"));
+            .located(By.xpath("//android.widget.EditText[2]"));
 
     public static final Target BOTON_INGRESAR = Target
             .the("boton ingrsar")
-            .located(By.xpath("//android.widget.TextView[@text=\"Ingresar\"]"));
+            .located(By.xpath("//android.widget.Button"));
 
 }

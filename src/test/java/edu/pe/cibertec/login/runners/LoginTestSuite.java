@@ -10,10 +10,5 @@ import static io.cucumber.junit.platform.engine.Constants.GLUE_PROPERTY_NAME;
 @Suite
 @IncludeEngines("cucumber")
 @SelectClasspathResource("features")
-@ConfigurationParameter(key = GLUE_PROPERTY_NAME, value = "edu.pe.cibertec.login.stepdefinitions")
-@ConfigurationParameter(
-        key = "cucumber.plugin",
-        value = "pretty, net.serenitybdd.cucumber.SerenityReporter"
-)
 public class LoginTestSuite {
 }
